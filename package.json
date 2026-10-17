@@ -1,6 +1,6 @@
 {
 	"name": "royal-residency-hotel",
-	"description": "A template for building a React application with Vite, Hono, and Cloudflare Workers",
+	"description": "Royal Executive Residency — guest house website (React + Vite + Hono on Cloudflare Workers)",
 	"cloudflare": {
 		"label": "Vite React Template",
 		"products": [
@@ -40,7 +40,8 @@
 		"deploy": "wrangler deploy",
 		"dev": "vite",
 		"lint": "eslint .",
-		"preview": "npm run build && vite preview"
+		"preview": "npm run build && vite preview",
+		"upload:media": "node scripts/upload-media-to-r2.mjs"
 	},
 	"type": "module"
 }
